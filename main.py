@@ -5,7 +5,7 @@ def main():
     print("\t", "для завершения введите 0")
     print("Квадратное уравнение имеет вид ax^2 + bx + c, введите" + '\n' + '\t' + "эти коэффициенты с учетом знака")
     a = b = c = 1
-    while a != 0 or b != 0 or c != None:
+    while a != 0 or b != 0 or c != 0:
         try:
             a = int(input("a: "))
             b = int(input("b: "))
