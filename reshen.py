@@ -13,19 +13,19 @@ class Square:
     def resh(self):
         try:
             if self.discr < 0:
-                print("Нет корней")
+                print("There are no roots in the equation.")
             elif self.discr == 0:
-                x = (- self.b - math.sqrt(self.discr))/(2 * self.a)
-                print("В уравнении один корень" + '\n' + "x = " + str(format(x, '.2f')))
+                self.x = (- self.b - math.sqrt(self.discr))/(2 * self.a)
+                print(f'''Equation has one root:
+x = {"%.2f" %self.x}''')
             else:
-                x1 = (- self.b - math.sqrt(self.discr))/(2 * self.a)
-                x2 = (- self.b + math.sqrt(self.discr))/(2 * self.a)
-                print("В уравнении два корня:" + "\n" + "x1 =" + str(format(x1, '.2f')) + "\n" + "x2 =" + str(format(x2, '.2f')))
+                self.x1 = (- self.b - math.sqrt(self.discr))/(2 * self.a)
+                self.x2 = (- self.b + math.sqrt(self.discr))/(2 * self.a)
+                print(f'''The equation has two roots:
+x1 = {"%.2f" %self.x1}
+x2 = {"%.2f" %self.x2}''')
         except ZeroDivisionError:
-            print("В процессе решения произошло деление на ноль")
+            print("Division by zero occurred in the process of solving")
 
     def __str__(self):
-        return 'Дискриминант равен ' + format(self.discr, '.2f')
-
-if __name__ == '__main__':
-    print('Список методов класса:\n__init__(self, a, b, c)\ndiscrim(self)\nresh(self)')
+        return f'The discriminant is equal to {"%.2f" %self.discr}'
