@@ -1,9 +1,10 @@
 import reshen
 
 def main():
-    print("Данная программа вычисляет корни квадратного уравнения,")
-    print("\t", "для завершения введите 0")
-    print("Квадратное уравнение имеет вид ax^2 + bx + c, введите" + '\n' + '\t' + "эти коэффициенты с учетом знака")
+    print('''This program calculates the roots of a quadratic equation,
+          \t\t enter 0 for quit.
+          \n The quadratic equation has the form ax^2 + bx + c, input,
+          these coefficients, taking into account the sign''')
     a = b = c = 1
     while a != 0 or b != 0 or c != 0:
         try:
