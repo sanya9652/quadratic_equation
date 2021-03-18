@@ -1,2 +1,2 @@
 # quadratic_equation
-Программа для решения квадратных уравнений в соответствии с правилами ООП.
+A program for solving quadratic equations in accordance with the rules of object-oriented programming.
