@@ -11,12 +11,12 @@ def main():
             a = int(input("a: "))
             b = int(input("b: "))
             c = int(input("c: "))
-            savings = reshen.Square(a, b, c)    #We get the values of the coefficients from the user and pass them to __init__
-            savings.discrim()   #Calculate the discriminant
-            print(savings)      #The value of the discriminant is displayed
-            savings.resh()      #Calculating the roots
-            print()
         except ValueError:
             print("You entered an invalid value")
+        savings = reshen.Square(a, b, c)    #We get the values of the coefficients from the user and pass them to __init__
+        savings.discrim()   #Calculate the discriminant
+        print(savings)      #The value of the discriminant is displayed
+        savings.resh()      #Calculating the roots
+        print()
 
 main()
